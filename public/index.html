@@ -1,69 +1,145 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>مبلمان مجلل</title>
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="fonts/font-face.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <div class="d-flex flex-column vh-100">
-        <nav class="navbar navbar-expand-lg navbar-dark bg-danger">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#">وبسایت آموزشی</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">صفحه نخست</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">دوره های آموزشی</a>
-                        </li>
-                        <!-- <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Dropdown
-                                </a>
-                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
+
+    <!-- Header -->
+    <header class="header border-bottom pb-2 border-2 border-primary">
+        <div class="container-fluid d-flex justify-content-md-between align-items-md-end">
+            <div class="search-form">
+                <a href="#" class="">
+                    <img src="img/basket.svg" alt="سبد خرید">
+                </a>
+                <img src="img/search.svg" alt="جستجو">
+            </div>
+            <div class="logo">
+                <h1 class="text-center font-weight-bold">مبلمان مجلل</h1>
+                <img src="img/logo-lg.svg" alt="مبلمان مجلل">
+            </div>
+            <div class="social-network">
+                <a href="#" class="">
+                    <img src="img/whatsapp.svg" alt="">
+                </a>
+                <a href="#" class="">
+                    <img src="img/twitter.svg" alt="">
+                </a>
+                <a href="#" class="">
+                    <img src="img/pinterest.svg" alt="">
+                </a>
+                <a href="#" class="">
+                    <img src="img/instagram.svg" alt="">
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom border-2 border-primary">
+        <div class="container-fluid">
+            <a class="navbar-brand d-md-none" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto ms-md-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">صفحه نخست</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            محصولات
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-                            </li> -->
-                    </ul>
-                    <form class="d-flex">
-                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success" type="submit">Search</button>
-                    </form>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">ورود به سایت</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">عضویت در سایت</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">درباره ما</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">تماس با ما</a>
+                    </li>
+                </ul>
+                <form class="d-flex d-md-none">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- End Navbar -->
+
+    <!-- Carousel -->
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="../storage/img/carousel-01.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>مبل راحتی سه نفره مدل نازلی</h5>
+                    <p>در طرح ویژه با 20 ٪ تخفیف خرید کنید.</p>
+                    <div class="">
+                        <a href="#" class="btn btn-primary border border-white text-white px-4">خرید</a>
+                    </div>
                 </div>
             </div>
-        </nav>
-        <div class="landing col">
-            <div class="cover w-100 h-100 d-flex align-items-center">
-                <div class="d-flex flex-column container">
-                    <h2 class="text-white">وب سایت آموزشی مهندس امین پورزارع</h2>
-                    <p class="text-white">
-                        لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است چاپگرها و متون بلکه روزنامه
-                        و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای
-                        کاربردی می باشد
-                    </p>
+            <div class="carousel-item">
+                <img src="../storage/img/carousel-01.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Second slide label</h5>
+                    <p>Some representative placeholder content for the second slide.</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="../storage/img/carousel-01.jpg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h5>Third slide label</h5>
+                    <p>Some representative placeholder content for the third slide.</p>
                 </div>
             </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
+    <!-- End Carousel -->
     
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </body>
 </html>
