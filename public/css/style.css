@@ -91,4 +91,39 @@ nav.navbar ul.navbar-nav .dropdown-toggle::after {
   height: 10rem !important;
   width: 10rem !important;
 }
+
+.products .card-header {
+  height: 18.75rem !important;
+}
+
+.products .card-header img {
+  z-index: -1;
+  width: 100% !important;
+  height: 100% !important;
+}
+
+.products .card-header h6 {
+  top: 1rem !important;
+  left: 1rem !important;
+  z-index: 1;
+}
+
+.b-user-icon {
+  height: 5rem !important;
+  width: 5rem !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.b-user-icon img {
+  height: 4rem !important;
+  width: auto !important;
+}
 /*# sourceMappingURL=style.css.map */
